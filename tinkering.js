@@ -1,8 +1,23 @@
-// Pick a string. Your string can have any number of characters.
-var my_string = "a";
+const namesOfMyFriends = [['Ryan', 'Raymond', 'Gaston'], ['Kenny', 'Joseph', 'Michael', 'Kapo', 'Eric'], ['Angus', 'Luis', 'Tommy', 'Giselle'], ['Winnie', 'Ivan', 'Ceasar', 'Enzo', 'Mello', 'Marco']]
 
-// Calculate the ASCII value of the first character, i.e. the character at the position 0. 
-var ASCII_value = my_string.charCodeAt(0);
+function playingWithArrays(element){
+  for(let row = 0; row < element.length; row++){
+    for(let column = 0; column < element[row].length; column++){
+      const formattedString = `This is ${element[row][column]} and they are my friend!`;
+      console.log(formattedString)
+    }
+  }
+}
 
-// Let us print
-console.log(ASCII_value);
+// playingWithArrays(namesOfMyFriends);
+
+const arrayPlay = (element) => {
+  for(let row = 0; row < element.length; row++){
+    for(let column = 0; column < element[row].length; column++){
+      const formattedString = `This is ${element[row][column]} and they are my friend!`;
+      console.log(formattedString)
+    }
+  }
+}
+
+arrayPlay(namesOfMyFriends);
